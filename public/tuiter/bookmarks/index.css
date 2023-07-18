@@ -1,0 +1,28 @@
+.wd-top-bar{
+    display:inline;
+    text-align: left;   
+}
+.wd-top-bar h2{
+    text-align: left;
+    margin-right: 16px;
+}
+.wd-top-bar button{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+.wd-bookmark-container{
+    border: 1px lightgrey;
+    text-align: left;
+}
+.wd-bookmark-container ul{
+    list-style: none;
+}
+.wd-bookmark-container h5{
+    color: lightgray;
+    padding: 12px;
+}
+.wd-bookmark-container h4{
+    color: black;
+    padding: 12px;
+}

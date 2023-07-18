@@ -1,0 +1,50 @@
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+.wd-grid-row{
+    clear:both;
+}
+.wd-grid-col-left-sidebar{
+    width: 20%;
+    float: left;
+}
+.wd-grid-col-main-content{
+    width:60%;
+    float: left;
+}
+.wd-grid-col-right-sidebar{
+    width: 20%;
+    float: left;
+}
+.wd-background-color{
+    background-color: white;
+}
+.wd-text-color{
+    text-decoration-color: black;
+}
+.wd-align-center{
+    width: 100%;
+    text-align: center;
+}
+.wd-padded-fat{
+    padding: 50px;
+}
+.wd-border-fat{
+    border-width: 20px 30px 20px 30px;
+}
+.wd-navigation{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+.wd-navigation > li{
+    padding: 5px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    font-size: 1.6em;
+    text-align: left;
+}
+.wd-navigation .wd-active{
+    font-weight: bold;
+}
