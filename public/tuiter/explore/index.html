@@ -8,22 +8,30 @@
 <body>
     <div class="container-fluid">
     <div class="row">
-        <div class="col-2 col-xs-1 col-sm-1 col-md-2 col-lg-2 col-xl-2 bg-white text-black">
+        <div class="col-1 col-md-2 bg-white text-black">
             <!-- <h3>Sidebar</h3> -->
            <ul class="list-group">
             <li class="list-group-item"><i class="fab fa-twitter"></i></li>
-            <li class="list-group-item"><i class="fas fa-home"></i> Home</li>
-            <li class="list-group-item active"><i class="fas fa-hashtag"></i> Explore</li>
-            <li class="list-group-item"><i class="fas fa-bell"></i> Notifications</li>
-            <li class="list-group-item"><i class="fas fa-envelope"></i> Messages</li>
-            <li class="list-group-item"><i class="fas fa-bookmark"></i> Bookmarks</li>
-            <li class="list-group-item"><i class="fas fa-list"></i> Lists</li>
-            <li class="list-group-item"><i class="fas fa-user"></i> Profile</li>
-            <li class="list-group-item"><i class="fas fa-ellipsis-h"></i> More</li>
+            <li class="list-group-item"><i class="fas fa-home"></i>
+                <span class="d-none d-md-block">Home</span></li>
+            <li class="list-group-item active"><i class="fas fa-hashtag"></i> 
+                <span class="d-none d-md-block"> Explore</span></li>
+            <li class="list-group-item"><i class="fas fa-bell"></i>
+                <span class="d-none d-md-block"> Notifications</span></li>
+            <li class="list-group-item"><i class="fas fa-envelope"></i>
+                <span class="d-none d-md-block"> Messages</span></li>
+            <li class="list-group-item"><i class="fas fa-bookmark"></i> 
+                <span class="d-none d-md-block"> Bookmarks</span></li>
+            <li class="list-group-item"><i class="fas fa-list"></i>
+                <span class="d-none d-md-block"> Lists</span></li>
+            <li class="list-group-item"><i class="fas fa-user"></i> 
+                <span class="d-none d-md-block"> Profile</span></li>
+            <li class="list-group-item"><i class="fas fa-ellipsis-h"></i> 
+                <span class="d-none d-md-block"> More</span></li>
             </ul>
-            <button class="btn btn-primary btn-lg rounded-pill">Tuit</button>
+            <button class="btn btn-primary btn-lg rounded-pill d-sm-block">Tuit</button>
         </div>
-        <div class="col-7 col-xs-7 col-sm-7 col-ms-7 col-lg-7 col-xl-7 bg-white text-black">
+        <div class="col-11 col-md-10 col-lg-7 bg-white text-black">
            <!-- <h3>Main content</h3> -->
            <input class="input-field wd-rounded-corners-all-around wd-text-color" type="text" placeholder="&#128269;   Search Tuitter" size="70%">
            <a href="../navigation.html"><input type="button" value="&#9881;" style="background-color: white; border: 0;"></a>
@@ -98,7 +106,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-3 col-xs-0 col-sm-1 col-md-3 col-lg-3 col-xl-3 bg-white text-black">
+        <div class="d-none d-lg-block col-3 bg-white text-black">
            <!-- <h3>Sidebar</h3> -->
            <ul class="list-group">
             <li class="list-group-item">
