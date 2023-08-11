@@ -1,7 +1,7 @@
 import { faCheckCircle, faHeart, faReply, faRetweet, faUpload, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { deleteTuit } from "../reducers/tuits-reducer";
+import { deleteTuitThunk } from "../services/tuits-thunks";
 import { useDispatch } from "react-redux";
 
 const TuitItem = (
@@ -22,7 +22,7 @@ const TuitItem = (
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
  return(
   <li className="list-group-item">
@@ -34,10 +34,10 @@ const TuitItem = (
       <div>
       <FontAwesomeIcon icon={faX} onClick={() => deleteTuitHandler(tuit._id)}/>
       </div>
-       <div className="fw-bolder">{tuit.userName}<FontAwesomeIcon icon={faCheckCircle} style={{color: "#005eff",}}/>
+       <div className="fw-bolder"> {tuit.userName} <FontAwesomeIcon icon={faCheckCircle} style={{color: "#005eff",}}/>
          {tuit.handle} . {tuit.time}</div>
        <div>{tuit.tuit}</div>
-       <div><FontAwesomeIcon icon={faReply}/>  {tuit.replies}  <FontAwesomeIcon icon={faRetweet}/>  {tuit.retuits}  <FontAwesomeIcon icon={faHeart} style={{color:"#ff0000",}} />  {tuit.likes}  <FontAwesomeIcon icon={faUpload}/>  </div>
+       <div><FontAwesomeIcon icon={faReply}/> &nbsp;  {tuit.replies} &nbsp; <FontAwesomeIcon icon={faRetweet}/> &nbsp; {tuit.retuits} &nbsp; <FontAwesomeIcon icon={faHeart} style={{color:"#ff0000",}} /> &nbsp; {tuit.likes} &nbsp; <FontAwesomeIcon icon={faUpload}/> &nbsp; </div>
      </div>
    </div>
   </li>

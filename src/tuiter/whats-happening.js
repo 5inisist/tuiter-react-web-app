@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {createTuit} from "./reducers/tuits-reducer";
+import { createTuitThunk } from "./services/tuits-thunks";
 import {useDispatch} from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImage, faPaperclip, faSignal, faSmileBeam } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +12,7 @@ const WhatsHappening = () => {
    const newTuit = {
     tuit: whatsHappening
    }
-   dispatch(createTuit(newTuit));
+   dispatch(createTuitThunk(newTuit));
    setWhatsHappening("");
  }
  return (
@@ -31,10 +31,10 @@ const WhatsHappening = () => {
            Tuit
          </button>
          <div className="text-primary fs-2">
-          <FontAwesomeIcon icon={faImage}/>  
-          <FontAwesomeIcon icon={faPaperclip}/>  
-          <FontAwesomeIcon icon={faSignal}/>  
-          <FontAwesomeIcon icon={faSmileBeam}/>
+          <FontAwesomeIcon icon={faImage}/> &nbsp;  
+          <FontAwesomeIcon icon={faPaperclip}/> &nbsp; 
+          <FontAwesomeIcon icon={faSignal}/> &nbsp;
+          <FontAwesomeIcon icon={faSmileBeam}/> &nbsp;
            {/* <AiOutlinePicture className="me-3"/>
            <HiOutlineGif className="me-3"/>
            <MdFormatListBulleted className="me-3"/>
